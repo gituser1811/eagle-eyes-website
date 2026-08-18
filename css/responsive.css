@@ -1,0 +1,262 @@
+/* ==========================================================================
+   EAGLE EYES - COMPREHENSIVE RESPONSIVE STYLES
+   Breakpoints: 1440px+, 1200px, 1024px, 768px, 430px, 390px, 375px, 320px
+   ========================================================================== */
+
+/* Wide Desktops (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .hero-content {
+    max-width: 900px;
+  }
+}
+
+/* Large Screens / Small Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .why-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-grid-5 .why-card:nth-child(4),
+  .why-grid-5 .why-card:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .pillars-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.5rem;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .services-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 80px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .who-we-are-split,
+  .about-split,
+  .contact-split {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .service-module,
+  .service-module.reverse {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .service-module.reverse .service-module-media {
+    order: 1;
+  }
+
+  .service-module.reverse .service-module-content {
+    order: 2;
+  }
+
+  .service-module-media {
+    height: 280px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* Small Tablets / Large Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .container,
+  .container-wide {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .services-grid-6 {
+    grid-template-columns: 1fr;
+  }
+
+  .manpower-grid-full {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .enquiry-form-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .map-interactive-container {
+    padding: 1.25rem;
+  }
+
+  .map-svg-wrapper {
+    height: 320px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .carousel-nav-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile Screens (max-width: 430px) */
+@media (max-width: 430px) {
+  .manpower-card {
+    width: 275px;
+  }
+
+  .header-actions .btn-outline-gold {
+    display: none;
+  }
+
+  .mobile-menu-drawer {
+    max-width: 100%;
+    padding: 85px 1.5rem 2rem;
+  }
+
+  .page-hero {
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-bottom: 3rem;
+  }
+
+  .who-we-are-media img,
+  .about-editorial-image img {
+    height: 300px;
+  }
+
+  .who-we-are-badge,
+  .about-image-badge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}
+
+/* Small Mobile Screens (max-width: 375px) */
+@media (max-width: 375px) {
+  .heading-display {
+    font-size: 2.15rem;
+  }
+
+  .heading-section {
+    font-size: 1.75rem;
+  }
+
+  .manpower-card {
+    width: 250px;
+  }
+
+  .filter-tab {
+    padding: 7px 12px;
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Ultra Small Mobile Screens (max-width: 320px) */
+@media (max-width: 320px) {
+  .heading-display {
+    font-size: 1.85rem;
+  }
+
+  .manpower-card {
+    width: 230px;
+  }
+
+  .container,
+  .container-wide {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+}
